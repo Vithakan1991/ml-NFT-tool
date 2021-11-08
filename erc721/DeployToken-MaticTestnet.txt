@@ -1,0 +1,51 @@
+npm run deploy-matictestnet
+
+> erc721@1.0.0 deploy-matictestnet
+> npx truffle migrate --reset --network matictestnet
+
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'matictestnet'
+> Network id:      80001
+> Block gas limit: 20000000 (0x1312d00)
+
+
+1_deploy_token.js
+=================
+
+   Deploying 'CustomERC721'
+   ------------------------
+   > transaction hash:    0x69ea1be6b86f55d40d1a712e39eb0093264faee6c01d60763f8e86774a9d0616
+   > Blocks: 2            Seconds: 5
+   > contract address:    0x09d38d3eF81dcf5d669cb61E52297969ed1764A1
+   > block number:        12702416
+   > block timestamp:     1618391909
+   > account:             0x32Ddbb3164E988C6661B09aAdc75992ce3f36fFD
+   > balance:             4.9538008
+   > gas used:            2087288 (0x1fd978)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04174576 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 2 (block: 12702420)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04174576 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.04174576 ETH
+

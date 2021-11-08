@@ -1,0 +1,38 @@
+{
+  "name": "erc721",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@openzeppelin/contracts": "^4.0.0",
+    "@truffle/hdwallet-provider": "1.2.2",
+    "truffle": "5.2.6",
+    "zeppelin-solidity": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "babel": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "ganache-cli": "^6.12.2",
+    "prettier": "^2.2.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.7",
+    "truffle-flattener": "^1.5.0"
+  },
+  "scripts": {
+    "clean": "rm -rf ./build",
+    "build": "npm run clean && npx truffle compile --config truffle-config.js",
+    "ganache": "npx ganache-cli -l 10000000 -d 'torch almost feed brother seat earth scorpion panther nuclear interest toy guide'",
+    "compile-erc721": "npm run build && cp -rf build/contracts ../frontend/erc721/",
+    "deploy-rinkeby": "npx truffle migrate --reset --network rinkeby",
+    "deploy-mainnet": "npx truffle migrate --reset --network mainnet",
+    "deploy-ganache": "npx truffle migrate --reset --network development",
+    "deploy-matictestnet": "npx truffle migrate --reset --network matictestnet",
+    "deploy-maticmainnet": "npx truffle migrate --reset --network maticmainnet",
+    "transfer-ownership-matictestnet": "npx truffle exec ./scripts/transferOwnership.js --network matictestnet",
+    "transfer-ownership-maticmainnet": "npx truffle exec ./scripts/transferOwnership.js --network maticmainnet"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "erc721",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "dependencies": {
+    "multi-token-standard": "github:ProjectOpenSea/multi-token-standard",
+    "openzeppelin-solidity": "^2.1.3"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "truffle": "^5.1.65"
+  },
+  "scripts": {
+    "compile-erc1155": "rm -rf build && truffle compile && cp -rf build/contracts ../frontend/erc1155/"
+  },
+  "author": "",
+  "license": "ISC"
+}
